@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<button id = "importcss">IMPORT CSS</button>
+<button id = "importhtml">IMPORT HTML</button>
+
+<textarea id = "derp"></textarea>
+<textarea id = "foo"></textarea>
+
+<div id = "scroll"></div>
+<div style = "display:none;" id = "cssdata"></div>
+<style id = "style1">
+</style>
+<style>
+    #derp{
+        position:absolute;
+        left:1em;
+        top:10%;
+    }
+    #foo{
+        position:absolute;
+        right:1em;
+        top:10%;        
+    }
+    #importcss{
+        position:absolute;
+        z-index: 2;
+        left:1em;
+    }
+    #importhtml{
+        right:1em;
+        position:absolute;
+    }
+</style>
+<script>
+//document.getElementById("style1").innerHTML = document.getElementById("cssdata").innerHTML;
+
+document.getElementById("importcss").onclick = function(){
+    document.getElementById("style1").innerHTML = document.getElementById("derp").value;
+}
+document.getElementById("importhtml").onclick = function(){
+    document.getElementById("scroll").innerHTML = document.getElementById("foo").value;
+}
+
+</script>
+</script>
+</body>
+</html>
+
