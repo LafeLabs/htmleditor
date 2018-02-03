@@ -1,0 +1,18 @@
+img{
+    width:50%;
+    margin:auto;
+    display:block;
+}
+h2,H4{
+    text-align:center;
+}
+body{
+    color:#00ff00;
+    background-color:black;
+    font-family:courier;
+    font-size:1.2em;
+    PADDING:1EM 1EM 1EM 1EM;
+}
+a{
+    color:#00ff00;                
+}
