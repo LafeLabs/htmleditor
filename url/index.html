@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<body>
+    <p>
+        base url:<input value = "http://www.geometronics.org/htmleditor/shell/" id = "base"/> 
+    </p>
+    <p>
+        css url:<input value = "http://www.geometronics.org/htmleditor/css/data.txt" id = "css"/> 
+    </p>
+    <p>
+        scroll url:<input value = "http://www.geometronics.org/htmleditor/scroll/data.txt" id = "scroll"/> 
+    </p>
+    <p>
+        complete url:<input id = "complete"/>
+    </p>        
+    <p>
+        link:<a id = "link"></a>
+    </p>
+<script>
+
+
+redraw();
+function redraw(){
+    complete = document.getElementById("base").value + "?cssurl=" + document.getElementById("css").value + "&htmlurl=" + document.getElementById("scroll").value;
+    document.getElementById("complete").value = complete;
+    document.getElementById("link").href = complete;
+    document.getElementById("link").innerHTML = complete;
+}
+
+</script>
+<style>
+body,input{
+    font-size:20px;
+    font-family:courier;
+}
+input{
+    width:80%;
+}
+</style>
+</body>
+</html>
