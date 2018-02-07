@@ -1,0 +1,29 @@
+<div class = "page screenpage" >
+    <canvas id = "invisibleCanvas" style = "display:none"></canvas>
+    <table id = "controlTable" class = "control06xx">
+        <tr>
+            <td>Addr:</td><td><input></input></td>
+        </tr>      
+        <tr>            
+            <td>Action:</td><td><input></input></td>
+        </tr>      
+        <tr>            
+            <td>Print:</td><td><input></input></td>
+        </tr>      
+        <tr>            
+            <td>Stack:</td><td><input></input></td>
+        </tr>           
+        <tr class = "viewButt">
+            <td>ACTION/</td><td>SYMBOL</td>
+        </tr>        
+        <tr class = "viewButt">
+            <td>BYTECODE</td><td>EXPORT</td>
+        </tr>
+        <tr class = "viewButt" >
+            <td>BYTECODE</td><td>IMPORT</td>
+        </tr>
+    </table>
+    <canvas id = "canvas0630" class = "canvas06xx"></canvas>
+    <input id = "glyphspellinput">
+    <textarea id = "textIO0630" class = "textIO06xx"></textarea>
+</div>

@@ -1,0 +1,55 @@
+function init(){
+    currentDataArray = [];
+    currentData = {
+            "shapes":[],
+            "glyph":"",
+            "unit":100,
+            "x0rel":0,
+            "y0rel":0,
+            "imgurl":"",
+            "imgw":2,
+            "imgleft":-1,
+            "imgtop":-1,
+            "w":500,
+            "h":500
+    };
+    currentDataArray.push(currentData);
+    currentDataIndex = 0;
+    inputs = document.getElementById("controlTable").getElementsByTagName("input");   
+    currentAddress = 0220;
+    currentTable[currentAddress] = currentData.glyph;    
+    unit = currentData.unit;
+    width0630 = 600;
+    height0630 = 400;
+    document.getElementById("canvas0630").width = innerWidth;
+    document.getElementById("canvas0630").height = innerHeight;
+    x0 = innerWidth/2 + currentData.x0rel*unit;
+    y0 = innerHeight/2 + currentData.y0rel*unit;    
+    buttons = document.getElementById("controlTable").getElementsByClassName("viewButt");
+    currentGlyph = currentTable[currentAddress] + ",0207,";
+    redraw();
+}
+
+function redraw(){
+    ctx = document.getElementById("canvas0630").getContext("2d");
+    ctx.clearRect(0,0,innerWidth,innerHeight);
+    doTheThing(0300);
+    drawGlyph(currentGlyph);
+    if(editMode){
+        doTheThing(0300);
+        x = 50;
+        y = innerHeight  - 50;
+        side = 25;
+        spellGlyph(currentGlyph);        
+    }
+    var glyphArray = currentGlyph.split(",");
+    currentTable[currentAddress] = "";
+    for(var index = 0;index < glyphArray.length;index++){
+        if(glyphArray[index] != "0207" && glyphArray[index].length > 0){
+            currentTable[currentAddress] += glyphArray[index] + ",";
+        }
+    }
+    currentData.glyph = currentTable[currentAddress];
+    inputs[0].value = "0" + currentAddress.toString(8);
+    document.getElementById("glyphspellinput").value = currentTable[currentAddress];
+}

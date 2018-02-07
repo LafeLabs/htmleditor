@@ -1,0 +1,33 @@
+<svg width="500" height="500" viewbox = "0 0 500 500"  xmlns="http://www.w3.org/2000/svg">
+
+<!--
+<json>
+{
+"shapes":[
+    "0220:0326,0350,0350,0335,0336,0366,0334,0330,0330,0304,0334,0334,0350,0350,0335,0367,0334,0304,0335,0335,0337,0331,",
+    "0221:0220,0336,0336,0333,0337,0337,0220,0336,0336,0333,0337,0337,0220,0336,0336,0333,0333,0333,0331,0336,0336,0333,0333,0330,0337,0337,0337,0337,0337,0334,0211,0201,0306,0335,0335,0201,0335,0335,0201,0335,0336,0336,",
+    "0222:0320,0306,0362,0203,0335,0203,0335,0335,0203,0335,0203,0363,0335,0335,0335,0330,0334,0324,0362,0203,0335,0203,0335,0335,0203,0335,0203,0363,0335,0335,0335,0330,0334,0320,",
+    "0223:0221,0336,0336,0222,0222,0222,0222,0222,0222,0222,0222,0335,0304,0335,0337,0331,0331,0127,0101,0124,0105,0122,0123,0110,0105,0104,0336,0336,0330,0333,0333,0337,0337,0365,",
+    "0260:0221,0336,0336,0222,0222,0222,0222,0222,0222,0222,0222,0335,0304,0335,0337,0331,0331,0127,0101,0124,0105,0122,0123,0110,0105,0104,0336,0336,0330,0333,0333,0337,0337,0365,"
+],
+"glyph":"0221,0336,0336,0222,0222,0222,0222,0222,0222,0222,0222,0335,0304,0335,0337,0331,0331,0127,0101,0124,0105,0122,0123,0110,0105,0104,0336,0336,0330,0333,0333,0337,0337,0365,",
+"w":500,
+"h":500,
+"x0":200,
+"y0":300,
+"x0rel":-3.531179564237414,
+"y0rel":-0.2704733283245679,
+"unit":133.10000000000005,
+"imgurl":"",
+"imgw":2,
+"imgleft":-1,
+"imgtop":-1
+}
+
+</json>
+-->
+<path    d = "M200,300 C225,239 175,228 200,167" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M233,300 C259,239 208,228 233,167" fill = "none" stroke-width = "2" stroke = "blue" /><path    d = "M267,300 C292,239 241,228 267,167" fill = "none" stroke-width = "2" stroke = "blue" />    <line x1="383" y1="325" x2="78" y2="325" style="stroke:blue;stroke-width:2" />
+    <line x1="78" y1="325" x2="231" y2="61" style="stroke:blue;stroke-width:2" />
+    <line x1="231" y1="61" x2="383" y2="325" style="stroke:blue;stroke-width:2" />
+	<path d = "M383 325 L373 341 L354 341 L364 325 L383 325 Z" stroke = "black" stroke-width = "2" fill = "black" />	<path d = "M364 325 L354 341 L335 341 L345 325 L364 325 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M345 325 L335 341 L316 341 L326 325 L345 325 Z" stroke = "black" stroke-width = "2" fill = "black" />	<path d = "M326 325 L316 341 L297 341 L307 325 L326 325 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M307 325 L297 341 L278 341 L288 325 L307 325 Z" stroke = "black" stroke-width = "2" fill = "black" />	<path d = "M288 325 L278 341 L259 341 L269 325 L288 325 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M269 325 L259 341 L240 341 L250 325 L269 325 Z" stroke = "black" stroke-width = "2" fill = "black" />	<path d = "M250 325 L240 341 L221 341 L231 325 L250 325 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M231 325 L221 341 L202 341 L212 325 L231 325 Z" stroke = "black" stroke-width = "2" fill = "black" />	<path d = "M212 325 L202 341 L183 341 L193 325 L212 325 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M193 325 L183 341 L164 341 L174 325 L193 325 Z" stroke = "black" stroke-width = "2" fill = "black" />	<path d = "M174 325 L164 341 L145 341 L155 325 L174 325 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M155 325 L145 341 L126 341 L136 325 L155 325 Z" stroke = "black" stroke-width = "2" fill = "black" />	<path d = "M136 325 L126 341 L107 341 L117 325 L136 325 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />	<path d = "M117 325 L107 341 L88 341 L97 325 L117 325 Z" stroke = "black" stroke-width = "2" fill = "black" />	<path d = "M97 325 L88 341 L69 341 L78 325 L97 325 Z" stroke = "yellow" stroke-width = "2" fill = "yellow" />    <text x="97" y = "392" fill = "black" font-size = "38.070686357516905px" font-family = "futura">WATERSHED</text>
+</svg>
