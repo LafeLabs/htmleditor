@@ -10,6 +10,15 @@ input,  textarea{
     background-color:#e0e0e0;
     border-color:black;
 }
+#hyperspacenav{
+    position:absolute;
+    width:25em;
+    top:0px;
+    left:0px;
+    font-family:courier;
+    font-size:16px;
+    z-index:4;
+}
 .coverpage{
     position:absolute;
     left:0px;
@@ -83,4 +92,13 @@ table{
     bottom:100px;
     font-size:16px;
     font-family:courier;
+}
+.title{
+    font-family:futura;
+    position:absolute;
+    text-align:center;
+    width:100%;
+    z-index:-1;
+    top:0.5em;
+    font-size:2em;
 }

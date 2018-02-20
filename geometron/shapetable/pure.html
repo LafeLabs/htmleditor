@@ -1,0 +1,44 @@
+   
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- 
+PUBLIC DOMAIN, NO COPYRIGHTS, NO PATENTS.
+-->
+    <title>/shapetable/</title>    
+<script id = "bytecodeScript">
+/*
+*/
+</script>
+<script>
+        
+function doTheThing(localCommand){    
+    if(localCommand >= 040 && localCommand <= 0176){
+            currentHTML += String.fromCharCode(localCommand);
+            currentWord += String.fromCharCode(localCommand);
+    }
+    if(localCommand >= 0200 && localCommand <= 0277){//shapes 
+        if(!(localCommand == 0207 && editMode == false) ){
+            drawGlyph(currentTable[localCommand]);    	    
+        }
+    }
+    if(localCommand >= 01000 && localCommand <= 01377){//symbol glyphs
+            drawGlyph(currentTable[localCommand]);    	    
+    } 
+}
+doTheThing(06);//import embedded hypercube in this .html doc
+doTheThing(07);//initialize Geometron global variables
+</script>
+</head>
+<body> 
+<script>
+init();
+function init(){
+
+}
+function redraw(){
+    
+}
+</script>
+</body>
+</html>

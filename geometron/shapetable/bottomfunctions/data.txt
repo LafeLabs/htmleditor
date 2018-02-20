@@ -17,7 +17,6 @@ function init(){
     currentDataIndex = 0;
     inputs = document.getElementById("controlTable").getElementsByTagName("input");   
     currentAddress = 0220;
-    currentTable[currentAddress] = currentData.glyph;    
     unit = currentData.unit;
     width0630 = 600;
     height0630 = 400;

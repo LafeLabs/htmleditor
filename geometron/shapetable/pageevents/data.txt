@@ -142,7 +142,7 @@
         currentGlyph = currentTable[currentAddress] + ",0207,";
         redraw();
     }
-    
+
     buttons[0].onclick = function(){//symbol/shape
         if(currentAddress < 01000){
             currentAddress += 01000;
@@ -179,10 +179,37 @@
         currentGlyph = currentTable[currentAddress] + ",0207,";
         redraw();
     }
+    buttons[3].onclick = function(){
+        filename = inputs[4].value;
+        var localString = "";
+        for(var index = 0220;index < 0247;index++){
+            if(currentTable[index].length > 1){
+                localString += "0" + index.toString(8) + ":" + currentTable[index] + "\n";
+            }
+        }
+        for(var index = 01220;index < 01247;index++){
+            if(currentTable[index].length > 1){
+                localString += "0" + index.toString(8) + ":" + currentTable[index] + "\n";
+            }
+        }
+        document.getElementById("textIO0630").value = localString;
+        data = localString;
+        var httpc = new XMLHttpRequest();
+        var url = "shapesaver.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        httpc.send("data=" + data + "&filename=" + filename);//send text to saver.php
+    }
 
 
 document.getElementById("glyphspellinput").onchange = function(){
     currentTable[currentAddress] = this.value;
     currentGlyph = currentTable[currentAddress] + "0207,";
     redraw();
+}
+
+document.getElementById("hyperspacenav").onchange = function(){
+    foo = window.location.href;
+    baseurl = foo.split("?")[0];
+    window.location = baseurl + "?url=" + this.value;
 }

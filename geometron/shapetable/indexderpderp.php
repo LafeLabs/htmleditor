@@ -1,11 +1,5 @@
 <?php
-
-    $baseurl = $_GET["url"];//get url
-    if(!(strlen($baseurl) > 0)){
-        $baseurl = "https://pastebin.com/raw/vRd5EGKw";
-    }
-    //http://localhost:8000/indexext.php?url=https://pastebin.com/raw/vRd5EGKw
-//$baseurl = "https://pastebin.com/raw/vRd5EGKw";//get url with JSON data holding location of all other urls 
+    $baseurl = "https://pastebin.com/raw/vRd5EGKw";//get url with JSON data holding location of all other urls 
     $data = file_get_contents($baseurl);
     $jsondata =json_decode($data);
     $actions03xxurl = $jsondata->actions03xx;

@@ -1,5 +1,7 @@
 <div class = "page screenpage" >
     <canvas id = "invisibleCanvas" style = "display:none"></canvas>
+    <div class = "title">Shape Table Editor</div>
+    <input id = "hyperspacenav"/>
     <table id = "controlTable" class = "control06xx">
         <tr>
             <td>Addr:</td><td><input></input></td>
@@ -13,6 +15,9 @@
         <tr>            
             <td>Stack:</td><td><input></input></td>
         </tr>           
+        <tr>            
+            <td>Filename:</td><td><input value = "foo" style = "width:10em;"></input></td>
+        </tr>           
         <tr class = "viewButt">
             <td>ACTION/</td><td>SYMBOL</td>
         </tr>        
@@ -21,6 +26,9 @@
         </tr>
         <tr class = "viewButt" >
             <td>BYTECODE</td><td>IMPORT</td>
+        </tr>
+        <tr class = "viewButt" >
+            <td>BYTECODE</td><td>SAVE</td>
         </tr>
     </table>
     <canvas id = "canvas0630" class = "canvas06xx"></canvas>
